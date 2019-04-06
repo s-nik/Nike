@@ -19,49 +19,50 @@
 		</header>
 		<main class="wrap">
 			<div class="goods">
-				<input type="radio" name="point" id="slide1" checked>
-				<input type="radio" name="point" id="slide2">
-				<input type="radio" name="point" id="slide3">
-				<input type="radio" name="point" id="slide4">
+				<input type="radio" name="point" id="slide1" checked class="goods__slide goods__slide--slide1">
+				<input type="radio" name="point" id="slide2" class="goods__slide goods__slide--slide2">
+				<input type="radio" name="point" id="slide3" class="goods__slide goods__slide--slide3">
+				<input type="radio" name="point" id="slide4" class="goods__slide goods__slide--slide4">
 				<div class="slider">
-					<div class="slides slide1">
-						<img src="img/Nike.png" alt="model">
+					<div class="slider__slide slider__slide--slide1">
+						<img class="slider__image" src="img/Nike.png" alt="model">
 					</div>
-					<div class="slides slide2">
-						<img src="img/Nike1.png" alt="model">
+					<div class="slider__slide slider__slide--slide2">
+						<img class="slider__image" src="img/Nike1.png" alt="model">
 					</div>
-					<div class="slides slide3">
-						<img src="img/Nike2.png" alt="model">
+					<div class="slider__slide slider__slide--slide3">
+						<img class="slider__image" src="img/Nike2.png" alt="model">
 					</div>
-					<div class="slides slide4">
-						<img src="img/Nike3.png" alt="model">
+					<div class="slider__slide slider__slide--slide4">
+						<img class="slider__image" src="img/Nike3.png" alt="model">
 					</div>
 				</div>	
 				<div class="controls">
-					<label for="slide1" class="label--violet"></label>
-					<label for="slide2" class="label--white"></label>
-					<label for="slide3" class="label--red"></label>
-					<label for="slide4" class="label--blue"></label>
+					<label for="slide1" class="controls__label controls__label--violet"></label>
+					<label for="slide2" class="controls__label controls__label--white"></label>
+					<label for="slide3" class="controls__label controls__label--red"></label>
+					<label for="slide4" class="controls__label controls__label--blue"></label>
 				</div>
 			</div>
 			<div class="about">
-				<h1 class="about__heading">Nike SB Stefan </br> Janoski Max</h1>
+				<h1 class="about__heading">Nike SB Stefan</br> Janoski Max</h1>
 				<p class="about__parag">Unisex Skateboarding Shoe</p>
 				<div class="raiting">
-					<div id="reviewStars-input">
-					    <input id="star-4" type="radio" name="reviewStars"/>
-					    <label title="gorgeous" for="star-4"></label>
-					    <input id="star-3" type="radio" name="reviewStars"/>
-					    <label title="good" for="star-3"></label>
-					    <input id="star-2" type="radio" name="reviewStars"/>
-					    <label title="regular" for="star-2"></label>
-					    <input id="star-1" type="radio" name="reviewStars"/>
-					    <label title="poor" for="star-1"></label>
-					    <input id="star-0" type="radio" name="reviewStars"/>
-					    <label title="bad" for="star-0"></label>
+					<div id="reviewStars-input" class="stars">
+					    <input id="star-4" type="radio" name="reviewStars"/ class="stars__star stars__star--4">
+					    <label title="gorgeous" for="star-4" class="stars__label"></label>
+					    <input id="star-3" type="radio" name="reviewStars" class="stars__star stars__star--3"/>
+					    <label title="good" for="star-3" class="stars__label"></label>
+					    <input id="star-2" type="radio" name="reviewStars" class="stars__star stars__star--2"/>
+					    <label title="regular" for="star-2" class="stars__label"></label>
+					    <input id="star-1" type="radio" name="reviewStars" class="stars__star stars__star--1"/>
+					    <label title="poor" for="star-1" class="stars__label"></label>
+					    <input id="star-0" type="radio" name="reviewStars" class="stars__star stars__star--0"/>
+					    <label title="bad" for="star-0" class="stars__label"></label>
+					</div>
 				</div>
 				<form action="" class="form">
-					<select name="" id="" class="form__size form__input form__el--style">
+					<select name="" id="" class="form__size form__input form__input--style">
 						<option disabled selected="Size">Size</option>
 						<option value="39">39</option>
 						<option value="40">40</option>
@@ -70,7 +71,7 @@
 						<option value="43">43</option>
 						<option value="44">44</option>
 					</select>
-					<select name="" id="" class="form__qty form__input form__el--style">
+					<select name="" id="" class="form__qty form__input form__input--style">
 						<option disabled selected="Qty">Qty</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -78,7 +79,7 @@
 						<option value="4">4</option>
 						<option value="5">5</option>
 					</select>
-					<button class="form__btn form__el--style">
+					<button class="form__btn form__input--style">
 						Add to cart
 					</button>
 				</form>

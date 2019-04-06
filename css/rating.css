@@ -1,8 +1,11 @@
-#reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+.stars__star:checked ~ .stars__label, 
+.stars__label, 
+.stars__label:hover, 
+.stars__label:hover ~ .stars__label {
   background: url('../img/star.png') no-repeat;
 }
 
-#reviewStars-input {
+.stars {
   
   /*fix floating problems*/
   overflow: hidden;
@@ -13,25 +16,25 @@
   float: right;
 }
 
-#reviewStars-input input {
+.stars__star {
   opacity: 0;
-  width: 43px;
+  width: 40px;
   height: 40px;
   position: absolute;
   top: 0;
   z-index: 0;
 }
 
-#reviewStars-input input:checked ~ label {
+.stars__star:checked ~ .stars__label {
   background-position: 0 -40px;
   height: 40px;
-  width: 43px;
+  width: 40px;
 }
 
-#reviewStars-input label {
+.stars__label {
   background-position: 0 0;
   height: 40px;
-  width: 43px;
+  width: 40px;
   float: right;
   cursor: pointer;
   margin-right: 10px;
@@ -39,27 +42,28 @@
   z-index: 1;
 }
 
-#reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+.stars__label:hover, 
+.stars__label:hover ~ .stars__label {
   background-position: 0 -40px;
   height: 40px;
-  width: 43px;
+  width: 40px;
 }
 
-#reviewStars-input #star-0 {
+.stars__star--0 {
   left: 0px;
 }
-#reviewStars-input #star-1 {
+.stars__star--1 {
   left: 53px;
 }
-#reviewStars-input #star-2 {
+.stars__star--2 {
   left: 106px;
 }
-#reviewStars-input #star-3 {
+.stars__star--3 {
   left: 159px;
 }
-#reviewStars-input #star-4 {
+.stars__star--4 {
   left: 212px;
 }
-#reviewStars-input #star-5 {
+.stars__star--5 {
   left: 265px;
 }

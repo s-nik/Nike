@@ -28,7 +28,7 @@ body {
 
 .top {
 	display: block;
-	margin: 2.5rem 2rem 1rem;
+	margin: 2.5rem 2rem 0;
 	padding-top: 2.5rem;
 }
 
@@ -44,17 +44,27 @@ body {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
+	position: relative;
 }
 
 .goods {
 	display: inline-block;
 	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;	
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
 }
 
 .about {
 	width: 40%;
-	padding-left: 1rem;
+	padding: 0 1rem;
 }
 
 .about__heading {
@@ -68,12 +78,12 @@ body {
 	opacity: .54;
 }
 
-#reviewStars-input {
+.stars {
 	transform: scale(0.3) translateX(-310px);
 	margin-bottom: 1.5rem;
 }
 
-.form__el--style {
+.form__input--style {
 	background-color: transparent;
 	border: 1px solid #4f5560;
 	font-size: 1.4rem;
@@ -97,14 +107,14 @@ body {
 .form__btn {
 	height: 40px;
 	width: 185px;
-	margin-top: 30px;
-	margin-bottom: 80px;
+	margin-top: 3rem;
+	margin-bottom: 7.5rem;
 	background-color: rgba(255, 255, 255, .1);
 }
 
-.form__el--style:hover,
-.form__el--style:focus,
-.form__el--style:active {
+.form__input--style:hover,
+.form__input--style:focus,
+.form__input--style:active {
 	filter: invert(.5);
 	cursor: pointer;
 }
